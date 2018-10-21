@@ -8,12 +8,13 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  min-height: 100vh; /** Changed this to improve the layout :) **/
 }
 
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 50vh; /** Changed this to improve the layout :) **/
   align-items: center;
   justify-content: center;
 }
@@ -50,7 +51,7 @@ kbd {
   color: #ffc600;
 }
 
-/**Adding Styles - jpasholk**/
+/** Adding Styles - jpasholk **/
 
 .header {
   display: flex;
@@ -58,11 +59,33 @@ kbd {
   color: #d3d3d3;
   font-size: 4.2rem;
   text-shadow: 0 0 .5rem black;
+  transition: all .075s ease;
 }
 .footer {
   display: flex;
   justify-content: center;
   color: #d3d3d3;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-shadow: 0 0 .5rem black;
+}
+
+@media screen and (max-width: 768px) {
+  kbd {
+    display: none;
+  }
+  .sound {
+    font-size: 1.6rem;
+    text-shadow: 0 0 .5rem black;
+  }
+  .keys {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .key {
+    padding: 2.5rem;
+    background: rgba(0,0,0,0.5);
+  }
+  header {
+    transform: scale(0.85);
+  }
 }
