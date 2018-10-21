@@ -82,6 +82,7 @@ kbd {
     flex-wrap: wrap;
   }
   .key {
+    border-radius: 1rem;
     padding: 2.5rem;
     background: rgba(0,0,0,0.5);
   }
