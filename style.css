@@ -88,5 +88,6 @@ kbd {
   }
   header {
     transform: scale(0.85);
+    margin-top: -40px;
   }
 }
