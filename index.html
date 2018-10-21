@@ -84,6 +84,8 @@
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 
+  window.addEventListener('touchstart', playSound); //Attempting to add touch support
+
 </script>
 
 
