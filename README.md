@@ -1,2 +1,3 @@
 # JSDrumKit
-A drumkit written in Javascript following WesBos's Javascript30 challenge.
+
+A drum kit written in Javascript following the Wes Bos Javascript30 challenge.
