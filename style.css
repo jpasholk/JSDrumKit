@@ -17,6 +17,7 @@ body,html {
   min-height: 50vh; /** Changed this to improve the layout :) **/
   align-items: center;
   justify-content: center;
+  padding: 2rem 0 2rem 0
 }
 
 .key {
@@ -57,9 +58,10 @@ kbd {
   display: flex;
   justify-content: center;
   color: #d3d3d3;
-  font-size: 4.2rem;
+  font-size: 4.75rem;
   text-shadow: 0 0 .5rem black;
   transition: all .075s ease;
+  width: 100%;
 }
 .footer {
   display: flex;
@@ -68,7 +70,16 @@ kbd {
   font-size: 1.8rem;
   text-shadow: 0 0 .5rem black;
 }
-
+footer {
+  background-color: rgba(0,0,0,0.25);
+  width: 100%;
+}
+header {
+  background-color: rgba(0,0,0,0.25);
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 @media screen and (max-width: 768px) {
   kbd {
     display: none;
@@ -86,8 +97,8 @@ kbd {
     padding: 2.5rem;
     background: rgba(0,0,0,0.5);
   }
-  header {
-    transform: scale(0.85);
-    margin-top: -40px;
+  .header {
+    font-size: 3rem;
+    margin-top: -10px;
   }
 }
